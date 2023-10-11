@@ -20,7 +20,7 @@ pub async fn on_deploy() {
 
 #[request_handler]
 async fn handler(_headers: Vec<(String, String)>, qry: HashMap<String, Value>, body: Vec<u8>) {
-    logger::int();
+    logger::init();
     let collection_name = qry.get("collection_name").unwrap().as_str().unwrap();
     let vector_size = qry.get("vector_size").unwrap().as_str().unwrap();
     let vector_size : u64 = vector_size.parse().unwrap();
