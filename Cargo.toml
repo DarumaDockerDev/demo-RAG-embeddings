@@ -9,7 +9,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 openai-flows = "0.9"
-vector-store-flows = "=0.1.1"
+vector-store-flows = "0.1.1"
 webhook-flows = "0.4"
 serde_json = "1.0"
 dotenv = "0.15.0"
